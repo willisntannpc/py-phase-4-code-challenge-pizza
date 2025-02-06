@@ -39,3 +39,9 @@ with app.app_context():
     db.session.commit()
 
     print("Seeding done!")
+
+
+if __name__ == '__main__':
+    from app import app
+    with app.app_context():
+        seed_data()
